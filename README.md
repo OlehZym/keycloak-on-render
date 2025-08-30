@@ -10,7 +10,7 @@
    ```bash
    cd keycloak-on-render
    git init
-   git remote add origin https://github.com/YOUR_USERNAME/keycloak-on-render.git
+   git remote add origin https://github.com/OlehZym/keycloak-on-render.git
    git add .
    git commit -m "Initial commit: Keycloak on Render"
    git push -u origin main
