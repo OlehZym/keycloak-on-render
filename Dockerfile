@@ -10,5 +10,8 @@ ENV KC_DB_PASSWORD=3aJFhjh4uIoc579JIMr1
 ENV KEYCLOAK_ADMIN=admin
 ENV KEYCLOAK_ADMIN_PASSWORD=9iJFZUT5gZdvH4wWXIHc
 
-# Оптимізований старт
+# Спочатку робимо build
+RUN /opt/keycloak/bin/kc.sh build
+
+# Тепер можна запускати в optimized mode
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--optimized"]
