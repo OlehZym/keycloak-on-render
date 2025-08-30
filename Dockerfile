@@ -14,4 +14,4 @@ ENV KEYCLOAK_ADMIN_PASSWORD=9iJFZUT5gZdvH4wWXIHc
 RUN /opt/keycloak/bin/kc.sh build
 
 # Тепер можна запускати в optimized mode
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--optimized"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--optimized", "--http-enabled=true"]
